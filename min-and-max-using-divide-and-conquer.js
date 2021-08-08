@@ -4,7 +4,7 @@ let x = [4, 135, 3, 78, 8, 0, 553];
 
 const findMax = (array, i = -1, j = -1) => {
   const length = (i == -1) ? array.length : (j - i + 1);
-	const reformatedI = (i == -1 ? 0 : i);
+  const reformatedI = (i == -1 ? 0 : i);
   const reformatedJ = (j == -1 ? array.length - 1: j);
 
   if (length == 1) return { max: array[reformatedI], min: array[reformatedI] };
